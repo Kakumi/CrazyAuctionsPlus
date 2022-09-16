@@ -804,7 +804,7 @@ public class GUIAction
         }
     }
     
-    @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+    @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
     public void onRepricing(AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();
         if (repricing.get(player.getUniqueId()) != null) {
